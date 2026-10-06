@@ -1,0 +1,157 @@
+{
+  "fotos": {
+    "name": "fotos",
+    "extensions": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".heic", ".raw", ".cr2", ".nef", ".tiff", ".tif"],
+    "mime_prefixes": ["image/"],
+    "keywords": ["foto", "photograph", "picture", "família", "family", "retrato", "paisagem", "landscape", "selfie"],
+    "subcategories": {
+      "familia": ["família", "family", "retrato", "portrait", "pessoas", "people", "selfie", "grupo", "group"],
+      "paisagens": ["paisagem", "landscape", "natureza", "nature", "cenário", "scenery", "praia", "beach", "montanha", "mountain", "cidade", "city"],
+      "eventos": ["evento", "event", "festa", "party", "casamento", "wedding", "aniversário", "birthday", "formatura", "graduation", "batizado"],
+      "documentos_foto": ["documento", "document", "recibo", "receipt", "nota", "nota fiscal", "invoice", "rg", "cpf", "cnh", "passaporte"],
+      "prints_tela": ["print", "screenshot", "captura", "screen", "tela"],
+      "outros": []
+    }
+  },
+  "videos": {
+    "name": "videos",
+    "extensions": [".mp4", ".mov", ".avi", ".mkv", ".webm", ".flv", ".wmv", ".m4v", ".3gp", ".ts", ".mts"],
+    "mime_prefixes": ["video/"],
+    "keywords": ["vídeo", "video", "filmagem", "recording", "clipe", "clip"],
+    "subcategories": {
+      "familia": ["família", "family", "caseiro", "home", "criança", "child", "bebê", "baby"],
+      "trabalho": ["trabalho", "work", "reunião", "meeting", "apresentação", "presentation", "treinamento", "training"],
+      "downloads": ["download", "youtube", "tiktok", "reels", "shorts", "instagram", "facebook", "twitter", "x.com"],
+      "cursos": ["curso", "course", "aula", "lesson", "tutorial", "webinar"],
+      "outros": []
+    }
+  },
+  "documentos": {
+    "name": "documentos",
+    "extensions": [".pdf", ".doc", ".docx", ".txt", ".rtf", ".odt", ".md", ".tex", ".pages", ".epub"],
+    "mime_prefixes": ["application/pdf", "application/msword", "application/vnd.openxmlformats", "text/", "application/epub"],
+    "keywords": ["documento", "document", "texto", "text", "contrato", "contract", "relatório", "report", "artigo", "article"],
+    "subcategories": {
+      "pessoais": ["pessoal", "personal", "currículo", "resume", "cv", "certidão", "certificate", "identidade", "rg", "cpf", "passaporte", "carteira"],
+      "trabalho": ["trabalho", "work", "contrato", "contract", "relatório", "report", "projeto", "project", "proposta", "proposal", "apresentação", "presentation"],
+      "financeiros": ["financeiro", "financial", "banco", "bank", "fatura", "invoice", "recibo", "receipt", "nota fiscal", "nf", "imposto", "tax", "irpf", "declaração", "boleto", "comprovante"],
+      "estudos": ["estudo", "study", "curso", "course", "aula", "lesson", "livro", "book", "artigo", "article", "paper", "tese", "thesis", "dissertação", "monografia", "apostila"],
+      "juridicos": ["jurídico", "legal", "processo", "lawsuit", "petição", "contrato", "termo", "procuração", "escritura"],
+      "medicos": ["médico", "medical", "exame", "exam", "laudo", "receita", "prescrição", "vacina", "carteira vacinação"],
+      "outros": []
+    }
+  },
+  "audio": {
+    "name": "audio",
+    "extensions": [".mp3", ".wav", ".flac", ".aac", ".ogg", ".m4a", ".wma", ".opus", ".aiff", ".alac"],
+    "mime_prefixes": ["audio/"],
+    "keywords": ["áudio", "audio", "música", "music", "som", "sound", "gravação", "recording", "podcast"],
+    "subcategories": {
+      "musica": ["música", "music", "song", "álbum", "album", "artista", "artist", "playlist"],
+      "podcasts": ["podcast", "episode", "episódio", "programa", "show"],
+      "gravacoes": ["gravação", "recording", "voice", "voz", "memo", "whatsapp", "audio", "áudio"],
+      "audiobooks": ["audiobook", "audio book", "livro audio", "audiolivro"],
+      "outros": []
+    }
+  },
+  "imagens_web": {
+    "name": "imagens_web",
+    "extensions": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".bmp"],
+    "mime_prefixes": ["image/"],
+    "keywords": ["meme", "internet", "web", "download", "reddit", "twitter", "instagram", "whatsapp", "forwarded", "encaminhado", "received", "sticker", "figurinha"],
+    "subcategories": {
+      "memes": ["meme", "engraçado", "funny", "humor", "piada", "joke"],
+      "capturas_tela": ["captura", "screenshot", "screen", "print", "tela"],
+      "encaminhados": ["encaminhado", "forwarded", "received", "whatsapp", "telegram", "compartilhado", "shared"],
+      "stickers": ["sticker", "figurinha", "adesivo"],
+      "outros": []
+    }
+  },
+  "codigo": {
+    "name": "codigo",
+    "extensions": [".py", ".js", ".ts", ".jsx", ".tsx", ".java", ".cpp", ".c", ".h", ".go", ".rs", ".rb", ".php", ".html", ".css", ".scss", ".json", ".yaml", ".yml", ".toml", ".sql", ".sh", ".bash", ".zsh", ".fish", ".ps1", ".bat", ".cmd", ".dockerfile", ".dockerignore", ".gitignore", ".env", ".ini", ".cfg", ".conf", ".xml", ".csv"],
+    "mime_prefixes": ["text/x-", "application/json", "application/x-", "text/csv"],
+    "keywords": ["código", "code", "script", "programa", "source", "src"],
+    "subcategories": {
+      "python": [".py", ".pyw", ".pyi"],
+      "javascript_typescript": [".js", ".ts", ".jsx", ".tsx", ".mjs", ".cjs"],
+      "web_frontend": [".html", ".css", ".scss", ".sass", ".less", ".vue", ".svelte"],
+      "backend": [".java", ".go", ".rs", ".rb", ".php", ".cs", ".vb"],
+      "config_data": [".json", ".yaml", ".yml", ".toml", ".ini", ".cfg", ".conf", ".xml", ".csv", ".env"],
+      "scripts_shell": [".sh", ".bash", ".zsh", ".fish", ".ps1", ".bat", ".cmd"],
+      "docker": ["dockerfile", ".dockerignore", "docker-compose"],
+      "git": [".gitignore", ".gitattributes", ".gitmodules"],
+      "outros": []
+    }
+  },
+  "arquivos_compactados": {
+    "name": "arquivos_compactados",
+    "extensions": [".zip", ".rar", ".7z", ".tar", ".gz", ".bz2", ".xz", ".tgz", ".tbz2", ".txz", ".zst"],
+    "mime_prefixes": ["application/zip", "application/x-rar", "application/x-7z", "application/x-tar", "application/gzip", "application/x-bzip2", "application/x-xz", "application/zstd"],
+    "keywords": ["compactado", "archive", "backup", "comprimido"],
+    "subcategories": {
+      "backups": ["backup", "bak", "restore"],
+      "projetos": ["projeto", "project", "source", "src"],
+      "downloads": ["download"],
+      "outros": []
+    }
+  },
+  "executaveis": {
+    "name": "executaveis",
+    "extensions": [".exe", ".msi", ".app", ".dmg", ".pkg", ".deb", ".rpm", ".apk", ".bin", ".run", ".appimage", ".flatpak", ".snap"],
+    "mime_prefixes": ["application/x-executable", "application/vnd.android", "application/x-msdownload", "application/x-apple-diskimage"],
+    "keywords": ["instalador", "installer", "executável", "executable", "programa", "setup"],
+    "subcategories": {
+      "windows": [".exe", ".msi"],
+      "macos": [".dmg", ".pkg", ".app"],
+      "linux": [".deb", ".rpm", ".appimage", ".flatpak", ".snap", ".bin", ".run"],
+      "android": [".apk"],
+      "outros": []
+    }
+  },
+  "imagens_3d_design": {
+    "name": "imagens_3d_design",
+    "extensions": [".blend", ".obj", ".fbx", ".gltf", ".glb", ".stl", ".ply", ".dae", ".3ds", ".max", ".c4d", ".ma", ".mb", ".psd", ".ai", ".eps", ".indd", ".xd", ".fig", ".sketch"],
+    "mime_prefixes": ["application/octet-stream", "image/vnd.adobe"],
+    "keywords": ["3d", "modelo", "model", "design", "blender", "photoshop", "illustrator", "figma", "sketch"],
+    "subcategories": {
+      "modelos_3d": [".blend", ".obj", ".fbx", ".gltf", ".glb", ".stl", ".ply", ".dae", ".3ds", ".max", ".c4d", ".ma", ".mb"],
+      "design_psd": [".psd", ".psb"],
+      "vetores": [".ai", ".eps", ".svg"],
+      "layout": [".indd", ".xd", ".fig", ".sketch"],
+      "outros": []
+    }
+  },
+  "banco_dados": {
+    "name": "banco_dados",
+    "extensions": [".sql", ".sqlite", ".db", ".sqlite3", ".mdb", ".accdb", ".dbf", ".frm", ".ibd", ".myd", ".myi"],
+    "mime_prefixes": ["application/x-sqlite3", "application/vnd.sqlite3"],
+    "keywords": ["banco", "database", "db", "sql", "dados", "data"],
+    "subcategories": {
+      "sqlite": [".sqlite", ".sqlite3", ".db"],
+      "mysql": [".frm", ".ibd", ".myd", ".myi"],
+      "access": [".mdb", ".accdb"],
+      "scripts_sql": [".sql"],
+      "outros": []
+    }
+  },
+  "fontes": {
+    "name": "fontes",
+    "extensions": [".ttf", ".otf", ".woff", ".woff2", ".eot", ".fon", ".pfb", ".pfm"],
+    "mime_prefixes": ["font/", "application/font-"],
+    "keywords": ["fonte", "font", "tipo", "typeface", "typography"],
+    "subcategories": {
+      "truetype": [".ttf", ".ttc"],
+      "opentype": [".otf"],
+      "web": [".woff", ".woff2", ".eot"],
+      "outros": []
+    }
+  },
+  "outros": {
+    "name": "outros",
+    "extensions": [],
+    "mime_prefixes": [],
+    "keywords": [],
+    "subcategories": {}
+  }
+}
