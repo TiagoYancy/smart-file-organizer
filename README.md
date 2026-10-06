@@ -25,6 +25,8 @@ pip install -r requirements.txt
 
 ## Uso
 
+### Via linha de comando
+
 ```bash
 # Simulação (dry-run) - mostra o que seria feito
 python smart_organize.py ~/Downloads
@@ -41,6 +43,44 @@ python smart_organize.py --doctor
 # Salvar config padrão para personalizar
 python smart_organize.py ~/Downloads --save-config meu_config.json
 ```
+
+### Via interface gráfica (Windows)
+
+```bash
+# Iniciar a interface gráfica
+python gui.py
+```
+
+A interface permite:
+- Selecionar a pasta para organizar
+- Escolher arquivo de configuração personalizado
+- Alternar entre modo de teste (dry-run) e aplicar mudanças
+- Visualizar o plano antes de executar
+- Ver log de operações em tempo real
+
+## Criação de executável Windows
+
+Para criar um `.exe` standalone (não requer Python instalado):
+
+```bash
+# Instalar dependências de build
+pip install -r requirements-dev.txt
+
+# Gerar executável
+pyinstaller --onefile --windowed --add-data "config/default_config.json;config" gui.py
+
+# O executável estará em: dist/gui.exe
+```
+
+> **Nota:** O executável incluirá todas as dependências necessárias (Python, Ollama client, Pillow). Porém, para funcionalidade completa de análise de imagem, o Ollama ainda precisa estar instalado e rodando separadamente na máquina destino.
+
+## Uso do executável
+
+1. Copie `gui.exe` para a máquina Windows de destino
+2. Certifique-se de que o Ollama está instalado e rodando (recomendado para análise semântica)
+3. Execute `gui.exe` e use a interface como descrito acima
+
+Se o Ollama não estiver disponível, a ferramenta ainda funciona usando apenas análise por extensão e nome de arquivo.
 
 ## Exemplo de organização
 

@@ -1,0 +1,1 @@
+# Development dependencies for building executables\npyinstaller>=5.0.0
